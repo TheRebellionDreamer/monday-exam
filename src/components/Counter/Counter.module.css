@@ -1,0 +1,67 @@
+.root {
+  padding: calc(var(--spacing) * 5);
+
+  border: 4px solid var(--primary);
+  border-radius: calc(var(--shape) * 2);
+}
+
+.counter-value {
+  margin-bottom: calc(var(--spacing) * 6);
+  padding: calc(var(--spacing) * 6);
+
+  text-align: center;
+
+  color: var(--secondary);
+  border-radius: calc(var(--shape) * 2);
+  background-color: var(--primary);
+
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+/* Applies if the counter is 5 */
+.error {
+  color: var(--error);
+}
+
+.action-buttons {
+  display: flex;
+  gap: calc(var(--spacing) * 10);
+
+  padding: calc(var(--spacing) * 6);
+
+  border: 4px solid var(--primary);
+  border-radius: calc(var(--shape) * 2);
+}
+
+.action-buttons button {
+  padding: 0 calc(var(--spacing) * 5);
+
+  cursor: pointer;
+  transition: all 0.2s;
+
+  color: var(--secondary);
+  border: none;
+  border-radius: calc(var(--shape) * 3);
+  background-color: var(--primary);
+
+  font-size: 4rem;
+}
+
+.action-buttons button:active {
+  transform: scale(0.9);
+
+  background-color: var(--primary-active);
+}
+
+.action-buttons button:hover {
+  box-shadow: 0 0 5px 4px var(--primary-disabled);
+}
+
+.action-buttons button:disabled {
+  cursor: not-allowed;
+  transform: none;
+
+  background-color: var(--primary-disabled);
+  box-shadow: none;
+}

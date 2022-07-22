@@ -1,12 +1,22 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap";
+
 :root {
+  /* Colors */
   --primary: #6DE0FD;
+  --primary-active: #59BDD6;
+  --primary-disabled: #497C8E;
   --secondary: #30323C;
+  --error: #F4144C;
+
+  /* Other variables */
   --shape: 5px;
+  --spacing: 4px;
 }
 
-.root {
-  height: 100vh;
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
-  background-color: var(--secondary);
+  font-family: Roboto, sans-serif;
 }
